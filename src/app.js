@@ -5,10 +5,10 @@ import { connectDB } from './config/db.js'
 import userRoutes from './routes/user.routes.js'
 import { showProcessInfo } from './utils/processInfo.js'
 import sumRoutes from "./routes/sum.routes.js"
+import mockRoutes from './routes/mock.routes.js'
 
 
 const app = express()
-
 
 
 // debug opcional
@@ -19,10 +19,14 @@ if (env.NODE_ENV !== "production") {
 // middlewares
 app.use(express.json())
 
+app.use(express.urlencoded({ extended: true }))
+
 // rutas
 app.use('/api/users', userRoutes)
 
 app.use('/api/sum', sumRoutes)
+
+app.use('/', mockRoutes)
 
 
 // puerto
@@ -79,9 +83,9 @@ process.on('unhandledRejection', (reason) => {
 
 
 // console.log("Proceso iniciado", process.platform);
-console.log("Proceso iniciado", process.on('message', (msg) => {
-    console.log("Mensaje recibido:", msg)
-}));
+// console.log("Proceso iniciado", process.on('message', (msg) => {
+//     console.log("Mensaje recibido:", msg)
+// }));
 
 
 

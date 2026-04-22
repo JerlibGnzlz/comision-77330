@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/app.js --mode dev",
     "qa": "nodemon src/app.js --mode qa",
-    "prod": "nodemon src/app.js --mode prod"
+    "prod": "nodemon src/app.js --mode prod",
+    "tdd": "nodemon src/app.js --mode test"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "mongoose": "^9.4.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
     "nodemon": "^3.1.14"
   }
 }
