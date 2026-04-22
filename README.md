@@ -1,7 +1,7 @@
 ## Curso de Programación Backend III: Testing y Escalabilidad Backend
 
 
-- [Semana 01 - Dominando Mock y Procesos en Node.js](./clases/clase-01)
+- [Semana 01 - Dominando Mock y Procesos en Node.js]([./clases/clase-01](https://github.com/JerlibGnzlz/comision-77330/tree/semana-1))
 - [Semana 02 - Optimización de Rendimiento y Logging](./clases/clase-02)
 - [Semana 03 - Gestión de Versiones, Logging y Performance](./clases/clase-03)
 - [Semana 04 - Optimización de Logging y Rendimiento con Docker](./clases/clase-04)
