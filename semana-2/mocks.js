@@ -15,7 +15,7 @@ const generarProducto = () => {
 }
 
 
-let generarProductos = (parametro) => {
+const generarProductos = (parametro) => {
 
 
     const productos = []

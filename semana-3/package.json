@@ -1,0 +1,17 @@
+{
+  "name": "semana-3",
+  "version": "1.0.0",
+  "main": "compression.js",
+  "type": "module",
+  "scripts": {
+    "compression": "node --watch compression.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-compression": "^1.0.2"
+  }
+}
