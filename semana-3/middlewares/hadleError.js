@@ -4,6 +4,8 @@ import { EErrors } from "../services/errors/enum.js"
 
 const manejadorError = (error, req, res, next) => {
 
+    console.log(error.causa)
+
     switch (error.code) {
         case EErrors.RUTA_ERROR:
             res.status(404).send({ error: error.message })
