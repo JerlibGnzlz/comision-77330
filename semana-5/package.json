@@ -1,0 +1,18 @@
+{
+  "name": "semana-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js",
+    "simple": "artillery quick --count 40 --num 50 'http://localhost:3000/api/simplex' -o ./test/simple.json",
+    "complex": "artillery quick --count 40 --num 50 'http://localhost:3000/api/complex' -o ./test/complex.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
